@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/icpl-platform/static/css/main.e36e6103.css",
-    "main.js": "/icpl-platform/static/js/main.0b98ea15.js",
-    "static/media/logo.png": "/icpl-platform/static/media/logo.90c858fc255c16d71d94.png",
-    "static/media/monkey-video.mp4": "/icpl-platform/static/media/monkey-video.5c5071983d231032e329.mp4",
-    "static/media/monkey.png": "/icpl-platform/static/media/monkey.bf7bdfb3227b661befd0.png",
+    "main.css": "/icpl-platform/static/css/main.bfdc4dec.chunk.css",
+    "main.js": "/icpl-platform/static/js/main.088f91be.chunk.js",
+    "main.js.map": "/icpl-platform/static/js/main.088f91be.chunk.js.map",
+    "runtime~main.js": "/icpl-platform/static/js/runtime~main.2452e2a6.js",
+    "runtime~main.js.map": "/icpl-platform/static/js/runtime~main.2452e2a6.js.map",
+    "static/js/2.05b96f21.chunk.js": "/icpl-platform/static/js/2.05b96f21.chunk.js",
+    "static/js/2.05b96f21.chunk.js.map": "/icpl-platform/static/js/2.05b96f21.chunk.js.map",
     "index.html": "/icpl-platform/index.html",
-    "main.e36e6103.css.map": "/icpl-platform/static/css/main.e36e6103.css.map",
-    "main.0b98ea15.js.map": "/icpl-platform/static/js/main.0b98ea15.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.e36e6103.css",
-    "static/js/main.0b98ea15.js"
-  ]
+    "precache-manifest.d2017fde2b92560725b57c1ca364c906.js": "/icpl-platform/precache-manifest.d2017fde2b92560725b57c1ca364c906.js",
+    "service-worker.js": "/icpl-platform/service-worker.js",
+    "static/css/main.bfdc4dec.chunk.css.map": "/icpl-platform/static/css/main.bfdc4dec.chunk.css.map",
+    "static/media/logo.png": "/icpl-platform/static/media/logo.4d761b59.png",
+    "static/media/monkey-video.mp4": "/icpl-platform/static/media/monkey-video.aa35f738.mp4",
+    "static/media/monkey.png": "/icpl-platform/static/media/monkey.c876728e.png"
+  }
 }
