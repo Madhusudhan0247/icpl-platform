@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/images/logo.png'; // Adjust the path based on the component's location
+import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const Navbar = () => {
   return (
@@ -12,11 +13,11 @@ const Navbar = () => {
         <a href="#freehit" style={linkStyle}>What is FreeHit?</a>
         <a href="#community" style={linkStyle}>Community</a>
         <a href="#faq" style={linkStyle}>FAQ</a>
+        <Link to="/news" style={linkStyle}>News</Link> {/* Consistent Link */}
       </div>
     </nav>
   );
 };
-
 
 // Styles
 const navStyle = {
