@@ -10,7 +10,7 @@ const News = () => {
   useEffect(() => {
     const fetchRSS = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/news');
+        const response = await fetch('https://fetchnews-cytpkodkpa-uc.a.run.app');
         const rss = await response.text();
 
         // Parse RSS feed

@@ -11,6 +11,7 @@ import HeroSection from './Components/HeroSection';
 import Tabs from './Components/Tabs';
 import HowToGetFreeHit from './Components/HowToGetFreeHit';
 import FAQ from './Components/FAQ';
+import TestFirebase from './Components/TestFirebase'; // Import TestFirebase Component
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/nfts" element={<NFTs />} />
         <Route path="/merchandise" element={<Merchandise />} />
         <Route path="/playground" element={<Playground />} />
+        <Route path="/test-firestore" element={<TestFirebase />} /> {/* Add Route for Firestore */}
       </Routes>
     </Router>
   );

@@ -1,26 +1,25 @@
+// Updated Tabs.js
 import React, { useState } from 'react';
-import Token from '../pages/Token'; // Token Component
-import NFTs from '../pages/NFTs'; // Placeholder for NFT component
-import Merchandise from '../pages/Merchandise'; // Placeholder for Merchandise component
-import Playground from '../pages/Playground'; // Placeholder for Playground component
+import Token from '../pages/Token';
+import NFTs from '../pages/NFTs';
+import Merchandise from '../pages/Merchandise';
+import Playground from '../pages/Playground';
 
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState('Token'); // Default to Token tab
-  const [hoveredTab, setHoveredTab] = useState(null); // Track hovered tab
+  const [activeTab, setActiveTab] = useState('Token');
+  const [hoveredTab, setHoveredTab] = useState(null);
 
-  // Map tabs to their corresponding components
   const tabs = [
     { name: 'Token', component: <Token /> },
-    { name: 'NFT\'s', component: <NFTs /> },
+    { name: "NFT's", component: <NFTs /> },
     { name: 'Merchandise', component: <Merchandise /> },
     { name: 'Playground', component: <Playground /> },
   ];
 
-  // Find the active tab's component
   const activeComponent = tabs.find((tab) => tab.name === activeTab)?.component;
 
   return (
-    <div>
+    <div style={mainContainerStyle}>
       {/* Tabs */}
       <div style={tabsContainerStyle}>
         {tabs.map((tab) => {
@@ -30,14 +29,14 @@ const Tabs = () => {
           return (
             <button
               key={tab.name}
-              onClick={() => setActiveTab(tab.name)} // Set active tab
-              onMouseEnter={() => setHoveredTab(tab.name)} // Set hovered tab
-              onMouseLeave={() => setHoveredTab(null)} // Clear hovered tab
+              onClick={() => setActiveTab(tab.name)}
+              onMouseEnter={() => setHoveredTab(tab.name)}
+              onMouseLeave={() => setHoveredTab(null)}
               style={
                 isActive
                   ? activeTabStyle
                   : isHovered
-                  ? { ...tabStyle, backgroundColor: '#DA625C' } // Hover effect
+                  ? { ...tabStyle, backgroundColor: '#767679' }
                   : tabStyle
               }
             >
@@ -56,21 +55,28 @@ const Tabs = () => {
 };
 
 // Styles
+const mainContainerStyle = {
+  minHeight: '100vh', // Full viewport height
+  backgroundColor: '#171C2C', // Fill the entire background
+  margin: '0', // Remove margin
+  padding: '0',
+  display: 'flex',
+  flexDirection: 'column',
+};
+
 const tabsContainerStyle = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  backgroundColor: '#D0362E',
-  margin: '0px 80px',
+  backgroundColor: '#86868C',
 };
 
 const tabStyle = {
   flex: 1,
   padding: '24px 20px',
-  backgroundColor: '#D0362E', // Inactive tab background
-  color: '#000', // Text color for inactive tabs
+  backgroundColor: '#86868C',
+  color: '#000',
   border: 'none',
-  borderBottom: 'none',
   textAlign: 'center',
   fontSize: '16px',
   cursor: 'pointer',
@@ -80,13 +86,15 @@ const tabStyle = {
 
 const activeTabStyle = {
   ...tabStyle,
-  backgroundColor: '#171C2C', // Active tab background
-  color: '#fff', // Text color for active tabs
+  backgroundColor: '#171C2C',
+  color: '#fff',
 };
 
 const contentContainerStyle = {
+  flex: 1, // Fills remaining space
   padding: '40px',
-  backgroundColor: '#ffffff',
+  backgroundColor: '#171C2C', // Same as the background
+  color: '#ffffff', // Ensure text is visible
 };
 
 export default Tabs;

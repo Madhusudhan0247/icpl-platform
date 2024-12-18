@@ -34,3 +34,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* index.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #171C2C; /* Match the background */
+ /* Default text color */
+}
