@@ -107,7 +107,7 @@ const learnMoreButtonStyle = {
 const buyButtonStyle = {
   padding: '16px 20px',
   border: 'none',
-  backgroundColor: '#171C2C',
+  backgroundColor: '#D0362E',
   color: '#fff',
   borderRadius: '5px',
   cursor: 'pointer',

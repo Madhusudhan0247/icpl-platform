@@ -98,7 +98,7 @@ const buttonContainerStyle = {
 
 const buttonStyle = {
   padding: '15px 30px', // Matches Hero Section button padding
-  fontSize: '16px', // Matches Hero Section font size
+  fontSize: '15px', // Matches Hero Section font size
   backgroundColor: '#DA625C',
   color: '#fff',
   border: 'none',
@@ -115,7 +115,7 @@ const buyButtonStyle = {
 
 const viewButtonStyle = {
   ...buttonStyle,
-  backgroundColor: '#333745',
+  backgroundColor: '#86868C',
 };
 
 const rewardsStyle = {
